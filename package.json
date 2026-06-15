@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "start": "node src/server.js",
-    "dev": "node --env-file=.env --watch src/server.js",
+    "dev": "node --env-file=.env --env-file=.env.development --watch src/server.js",
     "test": "node --test",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
