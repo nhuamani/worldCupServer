@@ -1,0 +1,32 @@
+{
+  "name": "worldcup-server",
+  "version": "1.0.0",
+  "description": "REST API for FIFA World Cup 2026, providing teams, groups, fixtures, standings, match results, and tournament statistics.",
+  "license": "MIT",
+  "author": "Nhuamani",
+  "type": "module",
+  "main": "src/server.js",
+  "keywords": [
+    "world-cup",
+    "fifa",
+    "world-cup-2026",
+    "football",
+    "soccer",
+    "api",
+    "rest-api",
+    "nodejs",
+    "express",
+    "sports-data"
+  ],
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
