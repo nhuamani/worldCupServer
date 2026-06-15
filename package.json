@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "REST API for FIFA World Cup 2026, providing teams, groups, fixtures, standings, match results, and tournament statistics.",
   "license": "MIT",
-  "author": "Nhuamani",
+  "author": "nhuamani",
   "type": "module",
   "main": "src/server.js",
   "keywords": [
@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "start": "node src/server.js",
-    "dev": "node --watch src/server.js",
+    "dev": "node --env-file=.env --watch src/server.js",
     "test": "node --test"
   },
   "engines": {
