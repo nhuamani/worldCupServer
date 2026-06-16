@@ -1,4 +1,7 @@
 import express from 'express'
+import { testConnection } from './configs/database.js'
+
+testConnection()
 
 const app = express()
 const port = process.env.PORT || 3001
