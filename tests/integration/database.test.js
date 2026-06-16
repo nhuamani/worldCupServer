@@ -3,7 +3,7 @@ import { jest } from '@jest/globals'
 const mockQuery = jest.fn()
 
 // Mock del pool
-jest.unstable_mockModule('../configs/database.js', () => ({
+jest.unstable_mockModule('../../src/configs/database.js', () => ({
   pool: {
     query: mockQuery,
   },
