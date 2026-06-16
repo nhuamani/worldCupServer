@@ -1,9 +1,15 @@
 import express from 'express'
-import * as db from './configs/database.js'
-
-console.log(db)
+import morgan from 'morgan'
 
 const app = express()
+
+const isDev = process.env.NODE_ENV !== 'production'
+
+if (isDev) {
+  app.use(morgan('dev'))
+} else {
+  app.use(morgan('combined'))
+}
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
