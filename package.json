@@ -21,7 +21,7 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "node --env-file=.env --env-file=.env.development --watch src/server.js",
-    "test": "node --test",
+    "test": "node --experimental-vm-modules --trace-warnings node_modules/jest/bin/jest.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier . --write",
@@ -37,6 +37,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "eslint": "^10.5.0",
+    "jest": "^30.4.2",
     "prettier": "^3.8.4"
   }
 }
